@@ -5,12 +5,11 @@ var saveBtn = $(".save");
 var getCurrentDay = () => {
   var now = new Date();
 
-  var hour = now.getHours();
-  var day = now.getDay();
+  var date = now.getDate();
   var month = now.getMonth();
 
 	var p = document.createElement('p');
-  p.innerHTML = `Date: ${month}/${day}`;
+  p.innerHTML = `Date: ${month}/${date}`;
 
   document.getElementById('currentDay').appendChild(p);
 }
